@@ -7,6 +7,7 @@ body {
   text-align: center;
   color: #CBDCEB;
 }
+
 .navbar-top {
   position: fixed;
   left: 0;                 /* start from left */
@@ -44,8 +45,6 @@ body {
   color: #fff;
 }
 
-
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -57,6 +56,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.2;
 }
 
 section > * {
@@ -261,6 +261,29 @@ section > * {
   min-height: 100vh;
 }
 
+.activity-slider {
+  max-width: 700px;   /* wider so side slides are visible */
+  margin: 0 auto;
+}
+
+.activity-slider img {
+  width: 400px;       /* ✅ fixed width */
+  height: 350px;      /* ✅ fixed height */
+  object-fit: cover;  /* crops but keeps proportions */
+  border-radius: 10px;
+  margin: 0 auto;     /* centers inside slide */
+}
+.activity-slider .slick-slide {
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.activity-slider .slick-center {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
 .activities h2 {
   margin-bottom: 30px;
   text-align: center;
@@ -312,4 +335,5 @@ section > * {
 .footer {
   padding: 0;
   color: white;
+  margin-bottom: 20px;
 }

@@ -50,13 +50,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.banner {
+.home {
   width: 100%;
   background: url('./assets/banner/madarasbanner.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 section > * {
@@ -121,7 +121,24 @@ section > * {
   max-width: 450px;
   text-align: left;
 }
+.cray-text {
+  text-align: left;   /* ✅ force left alignment of children */
+}
 
+.learn-more-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #234C6A;          /* ✅ requested color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #1b3b53;          /* darker shade on hover */
+}
 
 .founders {
   /* background: #708993; */
@@ -142,7 +159,7 @@ section > * {
   text-align: center;
 }
 
-.banner,
+.home,
 .about,
 .founders {
   min-height: 100vh;   /* ✅ full screen height */

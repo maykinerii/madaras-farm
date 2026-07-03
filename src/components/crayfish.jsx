@@ -1,6 +1,6 @@
 // src/components/crayfish.jsx
 import { Link } from "react-router-dom";
-import crayfishImg from '../assets/crayfish img/crayfish.jpg';
+import crayfishImg from '../assets/crayfish img/IMG_8003.jpg';
 
 export default function Crayfish() {
   return (

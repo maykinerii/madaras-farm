@@ -177,7 +177,7 @@ html {
   background: #4fc3f7;
   color: #0f2e47;
 }
-
+@media (max-width: 1024px) {
 .home {
   width: 100%;
   height: 100vh;
@@ -190,7 +190,7 @@ html {
   position: relative;
   overflow: hidden;
 }
-
+}
 .home::before {
   content: '';
   position: absolute;
@@ -202,12 +202,7 @@ html {
   pointer-events: none;
 }
 
-@media (max-width: 1024px) {
-  .home {
-    /* Changes only the attachment property so mobile can render the image */
-    background-attachment: scroll !important;
-  }
-}
+
 
 section > * {
   margin: 0;

@@ -184,7 +184,7 @@ html {
   background: linear-gradient(rgba(15, 46, 71, 0.5), rgba(26, 77, 109, 0.6)), 
               url('./assets/banner/madarasbanner.jpg') center/cover no-repeat;
   background-attachment: fixed;
-  display: flex
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -201,7 +201,6 @@ html {
   background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%);
   pointer-events: none;
 }
-
 
 
 section > * {

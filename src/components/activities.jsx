@@ -61,7 +61,6 @@ export default function Activities({ lightboxImg, openLightbox, closeLightbox })
     }
   };
 
-
   return (
     <section id="activities" className="activities">
       {/* Combined Showcase Section */}
@@ -76,10 +75,11 @@ export default function Activities({ lightboxImg, openLightbox, closeLightbox })
             <Slider ref={sliderRef} {...sliderSettings}>
               {allImages.map((image, idx) => (
                 <div key={idx} className="carousel-slide">
-                  <div className="image-card" onClick={() => openLightbox(image.src)}>
+                  <div className="image-card">
                     <img 
                       src={image.src} 
                       alt={image.alt} 
+                      onClick={() => openLightbox(image.src)}
                       className="carousel-image"
                     />
                     <div className="image-overlay">

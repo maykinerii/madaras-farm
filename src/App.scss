@@ -202,6 +202,13 @@ html {
   pointer-events: none;
 }
 
+@media (max-width: 1024px) {
+  .home {
+    /* Changes only the attachment property so mobile can render the image */
+    background-attachment: scroll !important;
+  }
+}
+
 section > * {
   margin: 0;
 }

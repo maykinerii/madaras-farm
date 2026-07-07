@@ -967,7 +967,7 @@ section > * {
   transition: all 0.3s ease;
   cursor: pointer;
   background: #0f2e47;
-  aspect-ratio: auto;
+  aspect-ratio: 1 / 1; /*size of an image container*/
 }
 
 .image-card:hover {
